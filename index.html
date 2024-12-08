@@ -68,6 +68,7 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="#header"> <span>Home</span></a></li>
+          <li><a href="contributions.html"><span>Open-source contributions</span></a></li>
 <!--          <li><a href="#about"><span>About</span></a></li> -->
 <!--          <li><a href="#education"> <span>Education</span></a></li> -->
 <!--<li><a href="#experience"> <span>Experience</span></a></li> -->
@@ -704,6 +705,17 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+<footer style="position: fixed; bottom: 10px; right: 10px; color: white; padding: 5px; border-radius: 5px;">
+    Impressions: <span id="counter">0</span>
+</footer>
+<script>
+    const counterElement = document.getElementById('counter');
+    fetch('https://api.countapi.xyz/hit/https://dixitparmar19.github.io/about/')
+        .then(response => response.json())
+        .then(data => {
+            counterElement.textContent = data.value;
+        });
+</script>
 
 </body>
 
