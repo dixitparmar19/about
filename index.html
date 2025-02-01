@@ -726,27 +726,15 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
-      strings: ["Software Engineer", "Open-source contributor", "Systems Engineer", "Tech Enthusiast"],
+      strings: ["Software Engineer", "Open-Source Enthusiast", "Embedded Systems Engineer"],
       loop: true,
       typeSpeed: 60,
-      backSpeed: 30
+      backSpeed: 20
     });
   </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-<footer style="position: fixed; bottom: 10px; right: 10px; color: white; padding: 5px; border-radius: 5px;">
-    Impressions: <span id="counter">0</span>
-</footer>
-<script>
-    const counterElement = document.getElementById('counter');
-    fetch('https://api.countapi.xyz/hit/https://dixitparmar19.github.io/about/')
-        .then(response => response.json())
-        .then(data => {
-            counterElement.textContent = data.value;
-        });
-</script>
-
 </body>
 
 </html>
